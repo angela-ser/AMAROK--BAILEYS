@@ -19,7 +19,7 @@ const PastebinAPI = require("pastebin-js"),
 router.get("/", async(req, res) => {
   const authfile = `./tmp/${makeid()}.json`;
   const { state } = useSingleFileAuthState(authfile, pino({ level: "silent" }));
-  function AmarokQrCode() {
+  function inrlQrCode() {
     try {
       let session = makeWASocket({
         auth: state,
@@ -28,7 +28,7 @@ router.get("/", async(req, res) => {
         browser: Browsers.macOS("Desktop"),
         downloadHistory: false,
         syncFullHistory: false,
-      }); 
+      });
 
       session.ev.on("connection.update", async (s) => {
         if (s.qr) {
@@ -61,7 +61,7 @@ let data = link.replace("https://pastebin.com/", "");
               index: 2,
               urlButton: {
                 displayText: "fork our github",
-                url: `github.com/Diegoson/AMAROK-MD`,
+                url: `github.com/inrl-official/inrl-bot-md`,
               },
             },
             {
@@ -99,7 +99,7 @@ let data = link.replace("https://pastebin.com/", "");
     }
   }
 
-  AmarokQrCode();
+  inrlQrCode();
 });
 
 const encrypt = (text) => {
