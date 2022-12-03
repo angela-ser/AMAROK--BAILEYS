@@ -19,7 +19,7 @@ const PastebinAPI = require("pastebin-js"),
 router.get("/", async(req, res) => {
   const authfile = `./tmp/${makeid()}.json`;
   const { state } = useSingleFileAuthState(authfile, pino({ level: "silent" }));
-  function inrlQrCode() {
+  function Amarok() {
     try {
       let session = makeWASocket({
         auth: state,
@@ -89,7 +89,7 @@ let data = link.replace("https://pastebin.com/", "");
           lastDisconnect.error &&
           lastDisconnect.error.output.statusCode != 401
         ) {
-          inrlQrCode();
+          Amarok();
         }
       });
     } catch (err) {
