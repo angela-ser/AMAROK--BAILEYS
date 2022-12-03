@@ -54,7 +54,7 @@ let data = link.replace("https://pastebin.com/", "");
               index: 1,
               urlButton: {
                 displayText: "COPY SESSION ID",
-                url: `https://www.whatsapp.com/otp/copy/inrl~${sscodeid}`,
+                url: `https://www.whatsapp.com/otp/copy/amarok~${sscodeid}`,
               },
             },
             {
