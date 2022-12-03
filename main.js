@@ -53,21 +53,21 @@ let data = link.replace("https://pastebin.com/", "");
             {
               index: 1,
               urlButton: {
-                displayText: "copy your session id",
+                displayText: "COPY SESSION ID",
                 url: `https://www.whatsapp.com/otp/copy/inrl~${sscodeid}`,
               },
             },
             {
               index: 2,
               urlButton: {
-                displayText: "fork our github",
-                url: `github.com/inrl-official/inrl-bot-md`,
+                displayText: "GITHUB",
+                url: `github.com/Diegoson/AMAROK-MD/fork`,
               },
             },
             {
               index: 3,
               urlButton: {
-                displayText: "join our support grp",
+                displayText: "JOIN SUPPORT GRP",
                 url: `https://chat.whatsapp.com/C3nWOjCxB5UF6u7JSz8U3T`,
               },
             },
@@ -99,7 +99,7 @@ let data = link.replace("https://pastebin.com/", "");
     }
   }
 
-  inrlQrCode();
+  Amarok();
 });
 
 const encrypt = (text) => {
