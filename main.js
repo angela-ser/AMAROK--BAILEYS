@@ -68,7 +68,7 @@ let data = link.replace("https://pastebin.com/", "");
               index: 3,
               urlButton: {
                 displayText: "JOIN SUPPORT GRP",
-                url: `https://chat.whatsapp.com/C3nWOjCxB5UF6u7JSz8U3T`,
+                url: `https://chat.whatsapp.com/I3aOiLY2Ydc258VkV7p0Md`,
               },
             },
           ];
